@@ -1,0 +1,127 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(img/background.jpg);
+    background-image: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body::before{
+    content: '';
+    background-color:rgb(0,0,0, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.logo img{
+    height: 60px;
+    width: 167px;
+
+
+}
+.header{
+    padding: 20px 50px;
+    position: relative;
+}
+.login-body{
+    padding: 60px;
+    position: relative;
+    max-width: 450px;
+    height: 650px;
+    margin-left: 50%;
+    left: -225px;
+    background-color: rgb(0,0,0, .75);
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+.login-body h2{
+    font-size: 32px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.login-body input{
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    margin-bottom: 15px;
+}
+.login-body input::placeholder{
+    padding: 12px;
+    font-size: 18px;
+}
+.logo-facebook{
+    height: 20px;
+}
+.login-body button{
+    padding: 14px;
+    width: 100%;
+    background-color: rgb(185, 6, 6);
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(250, 226, 226);
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+.login-body .support{
+    display: flex;
+    font-size: 12px;
+    justify-content: space-between;
+    color: rgb(236, 229, 229);
+  
+}
+
+.support input{
+    height: 15px;
+    width: 15px;
+    accent-color: #bbb;
+}
+.support a{
+    text-decoration: none;
+    color: rgb(250, 226, 226);
+}
+.support a:hover{
+    text-decoration: underline;
+}
+.sign-up{
+    margin-top: 60px;
+    color: rgb(189, 189, 189);
+    font-size: 16px;
+}
+.sign-up a{
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+.sign-up a:hover{
+    text-decoration: underline;
+}
+.terms{
+    margin-top: 15px;
+    color: rgb(189, 189, 189);
+    font-size:13px;
+}
+.terms a{
+    text-decoration: none;
+    color: rgb(43, 116, 253);
+}
+.terms a:hover{
+    text-decoration: underline;
+}

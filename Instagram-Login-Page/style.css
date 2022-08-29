@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #dcdcdc;
+}
+
+.container{
+    
+    margin-top: 20px;
+    display: grid;
+    grid-template-areas: "l r""f f";
+
+    justify-content: center;
+   align-content: center;
+
+}
+.nav-left{
+    grid-area: l;
+
+    min-width: 420px;
+    min-height: 615px;
+   
+}
+
+.nav-left .mobile{
+    background-image: url(https://www.instagram.com/static/images/homepage/phones/home-phones.png/1dc085cdb87d.png);
+    min-width: 454px;
+    min-height: 618px;
+}
+.nav-left img{
+    position: relative;
+    top: 28px;
+    left: 155px;
+}
+.nav-right{
+    background-color: green;
+    grid-area: r;
+
+    min-width: 420px;
+    min-height: 615px;
+    
+}
+.footer{
+    grid-area: f;
+    
+    justify-self: center;
+    text-align: center;
+    max-width: 780px;
+
+   
+    font-size: 13px;
+}
+
+.footer .links{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center ;
+    margin: 15px 0;
+}
+
+.footer li a{
+    color: #8e8e88;
+    text-decoration: none;
+    padding: 5px;
+  
+}
+.box-formulario{
+    background: white;
+    border: 1px solid #dbdbdb;
+    padding: 25px;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    
+
+}
+.logo-instagram{
+    width: 175px;
+    padding: 25px;
+}
+
+.nav-right input{
+    padding: 5px 15px;
+    font-size: 12px;
+    min-width: 200px;
+    margin-bottom: 5px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    color: #8e8e8e;
+    border-radius: 5px;
+    
+}
+.nav-right .botao-entrar{
+    margin-top: 15px;
+    margin-bottom: 25px;
+    background-color: #4f7bff;
+    min-width: 233px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    
+}
+.nav-right P{
+    color: #8e8e88;
+    font-size: 11PX;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.nav-right .entrar{
+color: #374c89;
+fon
+}
