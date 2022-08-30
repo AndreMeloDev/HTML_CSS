@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
 }
 .fundo{
     width: 300px;
@@ -12,7 +14,6 @@
     position: absolute;
     inset: 0;
     margin: auto;
-
 }
 .quadrado{
     width: 230px;
@@ -22,7 +23,6 @@
     position: absolute;
     inset: 0;
     margin: auto;
-
 }
 .circulo{
     width: 130px;
