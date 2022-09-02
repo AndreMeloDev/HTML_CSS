@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    font-family: monospace;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+div{
+    display: flex;
+    width: 20%;
+    height: 80%;
+    border: 1px solid black;
+    margin: auto auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.box1{
+    background-color: violet;
+}
+.box2{
+    background-color: red;
+}
+.box3{
+    background-color: yellow;
+}
+.box4{
+    background-color: green;
+}
+
+@media (max-width: 900px){
+    div{
+        width: 40%;
+        height: 40%;
+    }
+}
+
+@media (max-width: 600px){
+    div{
+        width: 80%;
+        height: 40%;
+    }
+
+    .box3, .box4{
+        display: none;
+
+    }
+}
