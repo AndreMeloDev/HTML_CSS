@@ -42,7 +42,7 @@
             cursor: pointer;
         }
         main{
-            background: url(/img/bg.png) no-repeat top center ;
+            background: url(img/bg.png) no-repeat top center ;
             height: 92vh;
             background-size: cover;
         }
