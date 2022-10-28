@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Menu responsivo</title>
+</head>
+<body>
+
+    <header>
+        <p>Menu responsivo</p>
+        <div class="menu" id="menu" onclick="document.getElementById('nav-aside').style.display='block'"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <main>
+        <nav-aside id="nav-aside">
+            <ul>
+                <li onclick="document.getElementById('nav-aside').style.display='none'"><a href="#" style="font-size: 32px">X</a></li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </nav-aside>
+    </main>
+   
+</body>
+</html>
