@@ -133,7 +133,7 @@ nav ul li a{
 }
 .section02 .cards{
     width: 100%;
-    min-width: 100px;
+    min-width: 1000px;
     margin: 100px auto;
     display: flex;
     flex-direction: row;
