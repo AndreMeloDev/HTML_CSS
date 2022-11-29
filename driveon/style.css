@@ -13,6 +13,7 @@ body{
 }
 /* cabeçalho, menu de navegação e are de login */
 header{
+    
     width: 100%;
     padding: 30px 100px 30px 100px;
     margin: auto auto;
@@ -132,8 +133,7 @@ nav ul li a{
     font-size: 2rem;
 }
 .section02 .cards{
-    width: 100%;
-    min-width: 1000px;
+    width: 90%;
     margin: 100px auto;
     display: flex;
     flex-direction: row;
@@ -141,7 +141,7 @@ nav ul li a{
 }
 .section02 .cards .card{
     width: 200px;
-    height: 450px;
+    height: 500px;
     margin: auto;
 
 }
@@ -175,6 +175,7 @@ nav ul li a{
     position: absolute;
     right: 100px;
     margin-top: 100px;
+    background-color: rgba(255, 255, 255, 0.801);
     
 }
 .section03 .divisor{
@@ -211,6 +212,7 @@ nav ul li a{
     position: absolute;
     left: 200px;
     margin-top: 400px;
+    background-color: rgba(255, 255, 255, 0.801);
 }
 .section04 .divisor{
     width: 150px;
@@ -250,6 +252,7 @@ color: #5712a6;
 }
 /* seção 05 com imagem, h2 e botoes */
 .section05{
+    display: flex;
     width: 100%;
     height: 120vh;
     background-image: url(img/bg-section05.png);
@@ -258,11 +261,10 @@ color: #5712a6;
     background-size: contain;     
 }
 .section05 .container{
-    width: 500px;
-    position: absolute;
+    max-width: 500px;
     margin-top: 250px;
-    right: 0;
-    transform: translateX(-50%);
+    margin: auto auto;
+    transform: translateX(40%);
 }
 .section05 .divisor{
     width: 150px;
@@ -282,7 +284,7 @@ color: #5712a6;
 }
 /* seção 06 area de registro */
 .section06{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -325,9 +327,10 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #5711a5;
 }
 footer .container{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto;
     display: flex;
     flex-direction: row;
@@ -355,16 +358,19 @@ footer ul li{
     cursor: pointer;
 }
 hr{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto auto;
 }
 footer .social{
-    width: 1000px;
+    max-width: 1000px;
     margin: auto auto;
+    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
     flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 30px;
     color: white;
-    margin-top: 30px;
     justify-content: space-between;
 }
 footer .social ul{
@@ -374,4 +380,150 @@ footer .social ul li{
     margin-top: -50px;
     display: inline-block;
     margin-left: 30px;
+}
+
+/* querys responsivas */
+@media (max-width:1100px){
+    header{
+        display: none;
+    }
+}
+
+@media (max-width: 900px){
+    
+    .section01{
+        margin-bottom: 0;
+    }
+    .section01 .text{
+        min-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .section02{
+        margin: auto auto;
+    }
+    .section02 .cards{
+        min-width: 100%;
+        flex-direction: column;
+        margin-bottom: 0;
+       
+    }
+    .section02 .cards .card{
+        width: 50vw;
+        margin-bottom: 100px;
+    }
+    .section03{
+        width: 100%;
+        max-height: 100vh;
+        margin: auto auto;
+        background-size: contain;
+    }
+    .section03 .container{
+        min-width: 100%;
+        height: 100%;
+        margin-top: 0;
+        right: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 100px;
+    }
+    .section04{
+        width: 100%;
+        max-height: 100vh;
+        margin: auto auto;
+        background-size: contain;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .section04 .container{
+        min-width: 100%;
+        height: 100%;
+        margin-top: 0;
+        left: 0;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 100px;
+    }
+    .section04 .underscore{
+        right: none;
+        left: 475px;
+       
+    }
+    .section05{
+        max-height: 100vh;
+        margin: auto auto;
+        display: flex;
+    }
+    .section05 .container{
+        min-width: 100%;
+        height: 100%;
+        padding-top: 200px;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(0);
+        background-color: rgba(255, 255, 255, 0.801);
+    }
+    .section06{
+        flex-direction: column;
+       align-items: center;
+    }
+    .section06 .container{
+        margin-top: 100px;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+    footer .container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+    footer .container .help{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    footer .about ul li{
+        display: inline-block;
+        margin-left: 20px;
+        margin-bottom: 50px;
+    }
+    footer .product ul li{
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+    
+  
+}
+
+@media (max-width: 650px){
+    
+footer .social{
+    
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-color: #5711a5;
+ 
+}
+footer .social ul{
+    margin-top: 10px;
+}   
+footer .social ul li{
+  
+    margin-left: 0;
+    margin-right: 20PX;
+}
+}
+
+@media (max-width: 550px){
+    .section04 .underscore{
+        right: none;
+        left: 270px;
+       
+    }
 }
