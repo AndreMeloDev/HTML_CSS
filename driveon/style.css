@@ -332,7 +332,6 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #5711a5;
 }
 footer .container{
     max-width: 1000px;
@@ -354,11 +353,11 @@ footer .help{
 footer .help span{
     cursor: pointer;
 }
-footer ul{
-    margin-top: 40px;
+footer .container ul{
+     margin-top: 40px;
     list-style: none;
 }
-footer ul li{
+footer .container ul li{
     margin-bottom: 20px;
     cursor: pointer;
 }
@@ -373,18 +372,19 @@ footer .social{
     padding-right: 30px;
     display: flex;
     flex-direction: row;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
     color: white;
     justify-content: space-between;
+    
 }
 footer .social ul{
-    margin-top: -10px;
+    /* margin-top: -10px; */
+    /* margin-bottom: -40px; */
 }   
 footer .social ul li{
-    margin-top: -50px;
     display: inline-block;
     margin-left: 30px;
+    margin-bottom: 0;
 }
 
 /* querys responsivas */
@@ -499,14 +499,16 @@ footer .social ul li{
         padding-right: 10px;
         margin-bottom: 50px;
     }
+    footer .product{
+        padding-top: 30px;
+    }
     footer .about ul li{
         display: inline-block;
-        margin-left: 20px;
-        margin-bottom: 50px;
+        margin-right: 20px;
     }
     footer .product ul li{
         display: inline-block;
-        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 0;
     }
     
