@@ -585,3 +585,10 @@ footer .social ul li{
        
     }
 }
+@media (max-width: 550px){
+    .section04 .underscore{
+        right: none;
+        left: 280px;
+       
+    }
+}
