@@ -252,7 +252,7 @@ nav ul li a{
     background-repeat: no-repeat;
     background-size: contain;  
     margin-top: -200px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 .section04 .container{
     max-width: 580px;
@@ -301,15 +301,15 @@ color: #5712a6;
 .section05{
     display: flex;
     width: 100%;
-    height: 120vh;
+    height: 700px;
     background-image: url(img/bg-section05.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;     
+    background-size: cover;   
+    margin-bottom: 100px;  
 }
 .section05 .container{
     max-width: 500px;
-    margin-top: 250px;
     margin: auto auto;
     transform: translateX(40%);
 }
@@ -479,7 +479,7 @@ footer .social ul li{
         margin: auto auto;
         background-size: contain;
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 100px;
     }
     .section04 .container{
         min-width: 100%;
@@ -503,10 +503,10 @@ footer .social ul li{
     .section05 .container{
         min-width: 100%;
         height: 100%;
-        padding-top: 200px;
-        margin-top: 15px;
+        margin-top: 50px;
         padding-left: 15px;
         padding-right: 15px;
+        padding-top: 100px;
         display: flex;
         flex-direction: column;
         align-items: center;
