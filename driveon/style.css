@@ -3,16 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
 
 body{
     width: 100%;
     margin: auto auto;
     font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
-    
+    overflow-x: hidden;
 }
 /* cabeçalho, menu de navegação e are de login */
 header{
@@ -73,12 +70,54 @@ nav ul li a{
     color: #2678fa;
 }
 
+/* menu hamburger */
+.hamburguer{
+    width: 100%;
+}
+.hamburguer .logo{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 30px;
+    background-image: url(img/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    display: inline-block;
+}
+.menu-img{
+    width: 32px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    filter: invert(16%) sepia(80%) saturate(3971%) hue-rotate(265deg) brightness(71%) contrast(109%);
+}
+.hamburguer .show-menu{
+    display: none;
+    
+}
+.hamburguer ul li{
+    text-align: center;
+    padding: 30px;
+    background-color: #5711a5;
+    border-bottom: 1px solid #ffff;
+    
+}
+
+.hamburguer a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+}
+
 /* seção 01 com texto e imagem de fundo */
 .section01{
     width: 100%;
     height: 750px;
     display: flex;
-    margin-top: 100px;
+    margin-top: 30px;
     margin-bottom: 10px;
     background-image: url(img/banner.png);
     background-position: center;
@@ -370,6 +409,7 @@ footer .social{
     margin: auto auto;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: row;
     padding-top: 20px;
@@ -465,6 +505,7 @@ footer .social ul li{
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
         
         transform: translateX(0);
         background-color: rgba(255, 255, 255, 0.801);
