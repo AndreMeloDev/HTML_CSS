@@ -1,5 +1,5 @@
 
-
+// função que ativa e desativa menu hamburguer
 let count = 0;
 
 function show() {
@@ -15,3 +15,22 @@ function show() {
             count = 0;
         }
     }
+
+    // função para as animações na viewport
+
+        const observer = new IntersectionObserver(entries => {
+            console.log(entries)
+
+            Array.from(entries).forEach(entry => {
+                if (entry.intersectionRatio >= 0.005) {
+                    entry.target.classList.add('hidden-off')
+                }
+            })
+
+        }, {
+            threshold: [0, .5, 1]
+        })
+
+        Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+            observer.observe(element)
+        })

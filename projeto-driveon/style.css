@@ -428,6 +428,15 @@ footer .social ul li{
     margin-bottom: 0;
 }
 
+/* Stilo das animações */
+.init-hidden{
+    opacity: 0;
+    transition: opacity 700ms linear;
+}
+.hidden-off{
+    opacity: 1;
+}
+
 /* querys responsivas */
 @media (max-width:1100px){
     header{
